@@ -2,9 +2,21 @@ package com.tictactoe.service;
 
 public interface XOJudgeService {
 
-	public void play(int number, char[][] board, char palyer);
+	/**
+	 * setValue() method is used to set value on board
+	 * 
+	 * @Input Player and integer location
+	 * 
+	 * @return boolean value
+	 */
+	public boolean setValueOnBoard(char player, Integer location);
 
-	public  boolean checkVictory(char[][] board, char player);
-	
-	public  boolean checkDraw(char palyerX, char palyerO, char[][] board);
+	/**
+	 * playerWon() method is used to determine winner
+	 * 
+	 * @Input Player
+	 * 
+	 * @return boolean value
+	 */
+	public boolean playerWon(char player);
 }
