@@ -4,6 +4,20 @@
 	<groupId>TicTacToe</groupId>
 	<artifactId>TicTacToe</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	  <distributionManagement>
+    <repository>
+      <id>releases</id>
+      <name>Releases</name>
+      <url>http://nexusrepo.xypro.com:8081/nexus/content/repositories/releases</url>
+
+    </repository>
+    <snapshotRepository>
+      <id>snapshots</id>
+      <name>Snapshots</name>
+      <url>http://nexusrepo.xypro.com:8081/nexus/content/repositories/snapshots/</url>
+    </snapshotRepository>
+  </distributionManagement>
+  
 	<build>
 		<sourceDirectory>src</sourceDirectory>
 		<plugins>
